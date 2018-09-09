@@ -1,4 +1,3 @@
-
 var contacts = [
     {
         id: 1,

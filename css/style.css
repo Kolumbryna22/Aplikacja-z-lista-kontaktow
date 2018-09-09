@@ -10,14 +10,12 @@ body {
   justify-content: center;
   padding: 10px;
 }
-
 .contactForm input {
   margin: 5px;
   padding: 10px;
   border: 2px solid #9b54dd;
   border-radius: 5px;
 }
-
 .contactForm button {
   background-color: white;
   border-radius: 10px;
@@ -26,7 +24,6 @@ body {
   transition-duration: 1s;
   cursor: pointer;
 }
-
 .contactForm button:hover {
   background-color: aqua;
 }
@@ -46,6 +43,7 @@ body {
 }
 
 .contactImage {
+  display: block;
   width: 128px;
   height: 128px;
   margin: 0 auto 20px;

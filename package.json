@@ -1,7 +1,7 @@
 {
   "name": "modul8",
   "version": "1.0.0",
-  "description": "",
+  "description": "### to instal packages run: ```sh $ npm install ```",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -16,14 +16,18 @@
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassautoprefixer": "onchange -d 100 sass/*.scss -- node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    "watch:browsersync": "browser-sync start --server --files \"css/*.css, *.html\""
+    "watch:sass": "sass --watch sass/style.scss:css/style.css",
+    "watch:autoprefixer": "onchange -d 100 -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
+    "watch:browsersync": "browser-sync start --server --files \"css/*.css, *.html\"",
+    "watch:babel": "npx babel --watch js --out-dir . --presets react-app/prod "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "browser-sync": "^2.24.5",
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
@@ -34,5 +38,13 @@
   "dependencies": {
     "node-sass": "^4.9.1",
     "rimraf": "^2.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kolumbryna22/Aplikacja-z-lista-kontaktow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kolumbryna22/Aplikacja-z-lista-kontaktow/issues"
+  },
+  "homepage": "https://github.com/Kolumbryna22/Aplikacja-z-lista-kontaktow#readme"
 }
