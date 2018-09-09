@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    font-size: 18px;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    input {
+        margin: 5px;
+        padding: 10px;
+        border: 2px solid rgb(155, 84, 221);
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        padding: 15px;
+        transition-duration: 1s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: aqua;
+        }
+    }
+}
+
+.contactsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contactItem {
+    border-radius: 10px;
+    background-color: white;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contactImage {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.contactEmail {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 750px) {
+    .contactForm {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
