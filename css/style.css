@@ -1,19 +1,67 @@
-body { margin: 0; padding: 0; background-color: aquamarine; font-size: 18px; }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+  font-size: 18px;
+}
 
-.contactForm { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 10px; }
+.contactForm {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.contactForm input {
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #9b54dd;
+  border-radius: 5px;
+}
+.contactForm button {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.contactForm button:hover {
+  background-color: aqua;
+}
 
-.contactForm input { margin: 5px; padding: 10px; border: 2px solid #9b54dd; border-radius: 5px; }
+.contactsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
 
-.contactForm button { background-color: white; border-radius: 10px; border: none; padding: 15px; transition-duration: 1s; cursor: pointer; }
+.contactItem {
+  border-radius: 10px;
+  background-color: white;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+}
 
-.contactForm button:hover { background-color: aqua; }
+.contactImage {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
 
-.contactsList { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; }
+.contactEmail {
+  text-decoration: none;
+  color: black;
+}
 
-.contactItem { border-radius: 10px; background-color: white; width: 250px; margin: 20px; padding: 20px; }
+@media (max-width: 750px) {
+  .contactForm {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 
-.contactImage { display: block; width: 128px; height: 128px; margin: 0 auto 20px; text-align: center; }
-
-.contactEmail { text-decoration: none; color: black; }
-
-@media (max-width: 750px) { .contactForm { -ms-flex-direction: column; flex-direction: column; width: 80%; margin: 0 auto; } }
+/*# sourceMappingURL=style.css.map */
