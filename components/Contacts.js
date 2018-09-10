@@ -10,7 +10,10 @@ var Contacts = React.createClass({
             return React.createElement(Contact, { item: contact, key: contact.id });
         });
 
-        return React.createElement('ul', { className: 'contactsList' }, contacts) //tutaj nie wiem jak zmienić
-        ;
+        return React.createElement(
+            'ul',
+            { className: 'contactsList' },
+            contacts
+        );
     }
 });

@@ -1,67 +1,19 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: aquamarine;
-  font-size: 18px;
-}
+body { margin: 0; padding: 0; background-color: aquamarine; font-size: 18px; }
 
-.contactForm {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-.contactForm input {
-  margin: 5px;
-  padding: 10px;
-  border: 2px solid #9b54dd;
-  border-radius: 5px;
-}
-.contactForm button {
-  background-color: white;
-  border-radius: 10px;
-  border: none;
-  padding: 15px;
-  transition-duration: 1s;
-  cursor: pointer;
-}
-.contactForm button:hover {
-  background-color: aqua;
-}
+.contactForm { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding: 10px; }
 
-.contactsList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-}
+.contactForm input { margin: 5px; padding: 10px; border: 2px solid #9b54dd; border-radius: 5px; }
 
-.contactItem {
-  border-radius: 10px;
-  background-color: white;
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-}
+.contactForm button { background-color: white; border-radius: 10px; border: none; padding: 15px; transition-duration: 1s; cursor: pointer; }
 
-.contactImage {
-  display: block;
-  width: 128px;
-  height: 128px;
-  margin: 0 auto 20px;
-  text-align: center;
-}
+.contactForm button:hover { background-color: aqua; }
 
-.contactEmail {
-  text-decoration: none;
-  color: black;
-}
+.contactsList { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; padding: 0; }
 
-@media (max-width: 750px) {
-  .contactForm {
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
+.contactItem { border-radius: 10px; background-color: white; width: 250px; margin: 20px; padding: 20px; }
 
-/*# sourceMappingURL=style.css.map */
+.contactImage { display: block; width: 128px; height: 128px; margin: 0 auto 20px; text-align: center; }
+
+.contactEmail { text-decoration: none; color: black; }
+
+@media (max-width: 750px) { .contactForm { -ms-flex-direction: column; flex-direction: column; width: 80%; margin: 0 auto; } }
